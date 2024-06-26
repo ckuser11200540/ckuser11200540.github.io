@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function(){
+        $( ".second" ).hide();
+        $( ".third" ).hide();
+        $( ".fourth" ).hide();
+        $( ".fifth" ).hide();
+        $( ".ichi" ).hide();
+        $( ".ni" ).hide();
+        $( ".san" ).hide();
+        $( ".hehe" ).hide();
+        $( ".hihi" ).hide();
+        $( ".huhu" ).hide();
+        $( ".badd" ).hide();
+        $( ".final" ).hide();
+        $( ".ii" ).hide();
+        $( ".won" ).hide();
+        $( ".hdbt" ).click(function(){
+            $( ".llt" ).hide(1000);
+            $(this).hide(3000);
+            $( ".second" ).fadeIn(5000);
+            $( ".third" ).show(5000);
+            $( ".fourth" ).show(5000);
+            $( ".fifth" ).show(5000);
+            $( ".third" ).click(function(){
+                $( ".ichi" ).show(3000);
+            });
+            $( ".fourth" ).click(function(){
+                $( ".ni" ).show(3000);
+            });
+            $( ".fifth" ).click(function(){
+                $( ".san" ).show(3000);
+            });
+            $( ".haha" ).click(function(){
+                $( ".hehe" ).show(3000);
+            });
+            $( ".hoho" ).click(function(){
+                $( ".hihi" ).show(3000);
+                $( ".huhu" ).show(3000);
+            });
+            $( ".good" ).click(function(){
+                $( ".final" ).show(3000);
+                $( ".ii" ).show(3000);
+            });
+            $( ".bad" ).click(function(){
+                $( ".badd" ).show(100);
+                $( ".badd" ).hide();
+            });
+            $( ".ii" ).click(function(){
+                $( ".won" ).show(3000);
+            });
+        });
+    });      
+    </script>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>It </p><p>is </p><p>a </p><p class="hoho">simple</p><p class="haha">game</p>
+<p>____________</p>
+<button class="hdbt">Click to hide ?</button>
+<p class="llt">?</p>
+<p class="second">Why do you click that button!!!</p>
+<p class="second">You need to get "?" back</p>
+<p class="second">you'll get 3 clues to help you ⬇</p>
+<button class="third">clue 1</button>
+<button class="fourth">clue 2</button>
+<button class="fifth">clue 3</button>
+<p>_____________</p>
+<p class="ichi">clue 1 : "?" = game </p>
+<p class="ni">clue 2 : x = 3+12+6+1+2 .</p>
+<p class="san">clue 3 : Read the question and find the correct answer in the item list</p>
+<p class="huhu">Question : What is "y" ?</p>
+
+<h2>This is a smaller Heading</h2>
+<p class="hehe">find y , y=x+3</p>
+<p class="hehe">click "simple" to get the question and the item list</p>
+<p class="huhu">Question : What is "y" ?</p>
+<h3 class="hihi"> item list </h3>
+<ul class="hihi">
+    <li class="bad">A. 資訊教室的樓層數</li>
+    <li class="bad">B. 作者本人的座號</li>
+    <li class="good">C. 125的學生人數</li>
+</ul>
+<p class="badd">Wrong Answer</p>
+<p class="final">Correct Answer. Here is "?" ⬇</p>
+<p class="ii">?</p>
+<h1 class="won">You Win !!!</h1>
+
+<h3>An image with link</h3>
+<a href="https://github.com/gorisanson/pikachu-volleyball">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
+</a>
+
+<p class="large">style from "/style.css"</p>
+
+</body>
+</html>
